@@ -17,6 +17,11 @@
                balance = balance + depositAmount;
             }
          }
+         void withdraw(int wdrawAmount) {
+            if(wdrawAmount <= balance){
+               balance = balance - wdrawAmount;
+            }
+         }
          int getBalance () const {
             return balance ;
          }

@@ -2,7 +2,9 @@
 // Account class with name and balance data members , and a
 // constructor and deposit function that each perform validation .
 #include <string>
+#include <iostream>
 
+using namespace std;
 
    class Account {
       public :
@@ -17,9 +19,14 @@
                balance = balance + depositAmount;
             }
          }
-         void withdraw(int wdrawAmount) {
-            if(wdrawAmount <= balance){
+         int withdraw(int wdrawAmount) {
+            if (wdrawAmount <= balance){
                balance = balance - wdrawAmount;
+
+            return wdrawAmount;
+
+            } else {cout << "Withdrawal amount exceeded account balance." << endl;
+               return 0;
             }
          }
          int getBalance () const {

@@ -38,10 +38,7 @@ int main()
 
         int wdrawAmount;
         cin >> wdrawAmount;
-        if (wdrawAmount <= account1.getBalance()){
-            cout << "withdrawing " << wdrawAmount << " of account balance";
-            account1.withdraw(wdrawAmount);
-        } else {cout << "Withdrawal amount exceeded account balance." << endl;}
+        cout << "withdrawing " << account1.withdraw(wdrawAmount) << " of account balance";
 
     cout << "\n\naccount: " << account1.getName() << "balance is $"
          << account1.getBalance();
@@ -50,10 +47,7 @@ int main()
 
     cout << "\n\nEnter withdraw amount for account 2: ";
     cin >> wdrawAmount;
-    if (wdrawAmount <= account2.getBalance()){
-            cout << "withdrawing " << wdrawAmount << " of account balance";
-            account2.withdraw(wdrawAmount);
-        } else {cout << "Withdrawal amount exceeded account balance." << endl;}
+    cout << "withdrawing " << account2.withdraw(wdrawAmount) << " of account balance";
 
     cout << "\n\naccount 1: " << account1.getName() << " balance is $"
          << account1.getBalance();

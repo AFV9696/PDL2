@@ -11,8 +11,6 @@ int main(){
     auto1.displayCarDetails();
     
     auto2.displayCarDetails();
-    
-
 
 
 }

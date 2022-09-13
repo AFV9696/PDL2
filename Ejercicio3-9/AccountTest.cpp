@@ -36,9 +36,9 @@ int main()
 
     cout << "\n\nEnter withdraw amount for account 1: ";
 
-        int wdrawAmount;
-        cin >> wdrawAmount;
-        cout << "withdrawing " << account1.withdraw(wdrawAmount) << " of account balance";
+     int wdrawAmount;
+     cin >> wdrawAmount;
+     cout << "withdrawing " << account1.withdraw(wdrawAmount) << " of account balance";
 
     cout << "\n\naccount: " << account1.getName() << "balance is $"
          << account1.getBalance();

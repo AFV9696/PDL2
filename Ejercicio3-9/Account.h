@@ -25,9 +25,9 @@ using namespace std;
 
             return wdrawAmount;
 
-            } else {cout << "Withdrawal amount exceeded account balance." << endl;
+            } cout << "Withdrawal amount exceeded account balance." << endl;
                return 0;
-            }
+               
          }
          int getBalance () const {
             return balance ;
